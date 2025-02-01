@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de Booststrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Productos - SportPro</title>
+</head>
+
+<body>
+    <header class="header" id="productos">
+        <div class="container-logo">
+            <nav class="nav-bar" id="inicio">
+                <a class="logo__empresa" href="../index.html">SportPro</a>
+                <ul>
+                    <a href="../index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contacto.html">Contacto</a>
+                </ul>
+            </nav>
+        </div>
+        <!--Barra rsponsive que se activa en la version Mobile-->
+        <div class="navbar__responsive">
+            <nav class="navbar bg-body-success fixed-top custom__navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold text-white" href="#inicio">Sportpro</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SportPro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Productos
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./productos.html">Hombres</a></li>
+                                        <li><a class="dropdown-item" href="./productos.html">Mujeres</a></li>
+                                        <li><a class="dropdown-item" href="./productos.html">Calzado</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <h1>SportPro - Entrena con estilo</h1>
+        <!--Seccion Productos-->
+        <h2 class="subtitulo mt-4 mb-2">PRODUCTOS</h2>
+        <div class="container__grid">
+            <aside class="container-filtro busqueda">
+                <div class="info__categorias">
+                    <p>¿Qué estás buscando? 
+                        <br>
+                        Explora nuestras categorías
+                    </p>
+                    <label for="categorias">CATEGORIAS</label>
+                    <select name="select__categorias" id="">Categorias
+                        <option value="hombre">Hombre</option>
+                        <option value="dama">Damas</option>
+                        <option value="calzado">Calzado</OPtion>
+                    </select>
+                </div>
+            </aside>
+            <section class="galeria">
+                <div class="container-productos container">
+                    <div class="card custom__card" style="width: 10em">
+                        <img src="../assets/conjuntorojo.jpg" class="card-img-top" alt="conjunto rojo nike">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title descripcion-p">Conjunto NIKE - Remera roja + Short
+                            </h5>
+                            <p class="price">Precio: $25.000</p>
+                            <button class="button button-ver btn btn-outline-success w-100 p-1"
+                                type="button">VER</button>
+                        </div>
+                    </div>
+                    <div class="card custom__card" style="width: 10em">
+                        <img src="../assets/conjuntoazul.jpg" class="card-img-top" alt="conjunto azul nike">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title descripcion-p">Conjunto NIKE - Remera + Short azul
+                            </h5>
+                            <p class="price">Precio: $25.000</p>
+                            <button class="button button-ver btn btn-outline-success w-100 p-1"
+                                type="button">VER</button>
+                        </div>
+                    </div>
+                    <div class="card custom__card" style="width: 10em">
+                        <img src="../assets/calzas.jpg" class="card-img-top" alt="calzas">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title descripcion-p">Calzas NIKE - Varios colores
+                            </h5>
+                            <p class="price">Precio: $7.599</p>
+                            <button class="button button-ver btn btn-outline-success w-100 p-1"
+                                type="button">VER</button>
+                        </div>
+                    </div>
+                    <div class="card custom__card" style="width: 10em">
+                        <img src="../assets/ojotas-nike.jpg" class="card-img-top" alt="ojotas nike">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title descripcion-p">Ojotas NIKE - Negras
+                            </h5>
+                            <p class="price">Precio: $6.999</p>
+                            <button class="button button-ver btn btn-outline-success w-100 p-1"
+                                type="button">VER</button>
+                        </div>
+                    </div>
+                    <div class="card custom__card" style="width: 10em">
+                        <img src="../assets/top-puma.jpg" class="card-img-top" alt="top puma blanco">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title descripcion-p">Top PUMA dama - Blanco
+                            </h5>
+                            <p class="price">Precio: $12.500</p>
+                            <button class="button button-ver btn btn-outline-success w-100 p-1"
+                                type="button">VER</button>
+                        </div>
+                    </div>
+                    <div class="card custom__card" style="width: 10em">
+                        <img src="../assets/zapas-under.jpg" class="card-img-top" alt="zapatillas under armour negras">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title descripcion-p">Zapatillas UNDER ARMOUR - Negras
+                            </h5>
+                            <p class="price">Precio: $16.999</p>
+                            <button class="button button-ver btn btn-outline-success w-100 p-1"
+                                type="button">VER</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        </section>
+        <!--Seccion de promociones y descuentos-->
+        <section class="descuentos">
+            <h2 class="subtitulo m-2" id="descuentos">DESCUENTOS</h2>
+            <div class="container-descuentos container-fluid">
+                <div class="card custom__card" style="width: 10em">
+                    <img src="../assets/buzo-seleccion.jpg" class="card-img-top" alt="buzo seleccion argentina">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title descripcion-p">Buzo Selección Argentina - Celeste
+                        </h5>
+                        <p class="price">Precio: $20.999</p>
+                        <button class="button button-ver btn btn-outline-success w-100 p-1" type="button">LO
+                            QUIERO!</button>
+                    </div>
+                </div>
+                <div class="card custom__card" style="width: 10em">
+                    <img src="../assets/zapas-puma-rosajpg.jpg" class="card-img-top" alt="zapatillas puma rosa">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title descripcion-p">Zapatillas PUMA - Rosa
+                        </h5>
+                        <p class="price">Precio: $17.899</p>
+                        <button class="button button-ver btn btn-outline-success w-100 p-1" type="button">LO
+                            QUIERO!</button>
+                    </div>
+                </div>
+                <div class="card custom__card" style="width: 10em">
+                    <img src="../assets/conjunto-adidas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title descripcion-p">Conjunto ADIDAS - Blanco y negro
+                        </h5>
+                        <p class="price">Precio: $28.499</p>
+                        <button class="button button-ver btn btn-outline-success w-100 p-1" type="button">LO
+                            QUIERO!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Pie de Pagina-->
+    <footer class="footer">
+        <div class="icon__container">
+            <i class="bi bi-instagram icon__footer"> @sportprodeportes</i>
+            <i class="bi bi-whatsapp icon__footer">11 2222 3333</i>
+            <i class="bi bi-geo-alt-fill icon__footer">Calle 9 de Julio y Av. San Martin, Bernal</i>
+        </div>
+        <div class="flecha__arriba">
+            <img src="../assets/flecha-arriba.png" alt="flecha arriba">
+            <a class="ir-arriba" href="#productos">Ir Arriba</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

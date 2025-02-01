@@ -1,0 +1,913 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", serif;
+    box-sizing: border-box;
+}
+/*Estilos INDEX*/
+header{
+    display: flex;
+}
+
+.container-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 100%;
+    background-color: #409060;
+    position: fixed;
+    z-index: 10;
+}
+.navbar__responsive{
+    display: none;
+}
+
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #409060;
+}
+
+.nav-bar a{
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin: 1em;
+    padding: 1px 1em;
+}
+.nav-bar a:hover{
+    color: #fff;
+}
+
+.nav-bar ul{
+    margin-bottom: 0;
+}
+
+.nav-bar .logo__empresa{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+    margin: 0 0.5em;
+}
+
+.container__titulo{
+    margin-top: 3.5em;
+    padding: 0.6em;
+    width: 100%;
+    font-size: 0.7em;
+    font-weight:800;
+    text-align: center;
+    color: #409060;
+    background-color: #000;
+}
+
+.titulo{
+    font-size: 1.8em;
+}
+
+.container-bienvenida{
+    margin: auto;
+    width: 100%;
+    height: 30em;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(../assets/atletacorriendo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.subtitulo-bienvenida{
+    font-size: 1.2em;
+    padding: 30px;
+    color: #fff;
+    text-shadow: 6px 6px 4px #000000;
+    top: 400px;
+}
+
+.bienvenida{
+    width: 70%;
+    margin: 1em;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow: 6px 6px 4px #000000;
+    bottom: 500px;
+}
+
+.container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin: 120px;
+}
+
+.subtitulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight:bold;
+    text-align: center;
+    margin: 1em;
+    padding: 10px;
+}
+
+.button {
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+    border: 2px solid #409060;
+    border-radius: 50px;
+    color:  #409060;
+    font-weight: bold;
+}
+
+.button-ver{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 0.7em;
+    border-radius: 80px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+.image-top {
+    border-radius: 45px;
+    width: 40em;
+    height: 40em;
+    margin: 50px;
+}
+
+.descripcion-p {
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.price {
+    color: #409060;
+    font-size: 0.7em;
+    margin: 23px;
+}
+
+section .container-image{
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    width: 100%;
+    height: 25em;
+}
+
+.image-item{
+    text-align: center;
+    height: 15em;
+    margin: 10px;
+}
+
+.image-producto{
+    height: 22em;
+    border-radius: 10px;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+/*Promociones*/
+.container-button-ver{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.promociones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.container__subtitulo--promociones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 30em;
+    background-image: url(../assets/fondo-pared.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.btn__descuentos{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1em;
+    color: #409060;
+    background-color: #4090604d;
+    border-radius: 45px;
+    margin: 10px;
+    padding: 10px 40px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: end;
+}
+.btn__descuentos:hover{
+    color: #162f20e4;
+    background-color: #5fcc8bd3;
+}
+
+.container__subtitulo--imagen{
+    width: 20em;
+    height: 30em;
+    object-fit: contain;
+    background-image: url(../assets/imagen-promociones.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h3{
+    text-align: center;
+    margin: 2em;
+}
+
+.promos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+}
+
+.image-promo {
+    width: 10em;
+    height: 10em;
+}
+
+.container-descripcion{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    
+}
+
+.button__promo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 40px;
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+    border: 2px solid #409060;
+    border-radius: 50px;
+    color:  #409060;
+    font-weight: bold;
+}
+
+/*seccion de opiniones de clientes*/
+
+.container-opinion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-opinion{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2ecdc;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 15em;
+    border: 4px solid #f2ecdc;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 1em 1em;
+    box-shadow: 0 0 6px #000000;
+}
+
+.image-opinion {
+    margin: 0 1em;
+    padding: 10px;
+    width: 8em;
+    height: 7em;
+    border-radius: 50% 50%;
+    background-color: transparent;
+}
+.card-opinion__stars{
+    width: 60%;
+    margin: 10px;
+}
+
+.opinion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+/*Seccion de Pie de Pagina*/
+footer {
+    display: flex;
+    flex: wrap;
+    height: 10em;
+    justify-content: center;
+    align-items:center;
+    background-color: #4a4e4a;
+    color: #fff;
+}
+
+.icon__footer{
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.flecha__arriba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+footer .flecha__arriba img{
+    width: 3em;
+    height: 3em;
+}
+
+.ir-arriba {
+    font-size: 1em;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+}
+
+/*Estilos PRODUCTOS*/
+.container__grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "busqueda galeria galeria galeria";
+}   
+
+.container-filtro{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0.5em 1em;
+    grid-area: "busqueda";
+}
+
+.info__categorias{
+    display: flex;
+    width: 100%;
+    font-size: 1em;
+    flex-direction: column;
+    text-align: initial;
+}
+
+.info__categorias span{
+    font-weight: bold;
+}
+
+.container-filtro label{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-filtro select{
+    font-size: 0.7em;
+    padding: 0.75em;
+    border-radius: 75px;
+    width: 70%;
+}
+.container-filtro select:hover{
+    box-shadow:0 0 8px #409060;
+}
+.container-filtro select:focus{
+    border: 3px solid #409060;
+}
+
+.container__grid section .galeria{
+    grid-area: "galeria";
+}
+
+.container-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5em;
+}
+.custom__card{
+    margin: 3px;
+    padding: 1px;
+    height: 16em;
+}
+.custom__card img{
+    width: 10em;
+    height: 9em;
+}
+
+.container-productos .card__producto, .descripcion-p, .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0em;
+    padding: 1px;
+}
+
+.card__producto .image-card{
+    width: 7em;
+    height: 7em;
+    border-radius: 10px;
+}
+
+.container-productos button{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+}
+
+/* seccion DESCUENTOS*/
+.container-descuentos{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(245, 245, 220, 0.403);
+    padding: 40px 0;
+}
+
+.container-descuentos h2{
+    display: flex;
+    align-items: center;
+}
+
+.card__descuentos{
+    margin: 50px 0;
+}
+
+.image__descuentos {
+    border-radius: 10px;
+    width: 7em;
+    height: 7em;
+}
+
+.after {
+    font-size: 0.6em;
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+.card__descuentos button{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.1em;
+    padding: 0.5em 1em;
+}
+
+/*Estilos CONTACTO*/
+
+.container__contacto{
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    width: 100%;
+}
+
+.subtitulo__contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50em;
+    margin-top: 1em;
+    font-size: 2em;
+    color: #fff;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)        
+    ),
+    url(../assets/imagen-contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.texto__contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 22em;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.container__contacto .texto__contacto p{
+    width: 80%;
+    height: 15em;
+    padding: 10px;
+}
+
+.container__contacto .texto__contacto span{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.container__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    height: 21em;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 200px;
+    background-color: #eeea;
+    box-shadow: 2px 2px 10px;
+}
+
+.container__info .card__info img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.container__info .card__info p{
+    font-size: 0.8em;
+    margin: 15px;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Seccion de SUGERENCIAS*/
+.container__sugerencias{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitulo__sugerencias{
+    font-size: 0.8em;
+}
+
+.subtitulo__sugerencias h2{
+    margin: 40px;
+    font-size: 2em;
+}
+.subtitulo__sugerencias p{
+    width: 70%;
+    margin: 30px auto;
+}
+.form{
+    border: 2px solid #ccc;
+    width: 70%;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 25px;
+}
+
+.formulario__sugerencias{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 30px;
+}
+
+.formulario__sugerencias input, textarea{
+    font-size: 1em;
+    margin: 15px 50px;
+}
+
+/*Seccion de PREGUNTAS FRECUENTES*/
+
+.container__preguntas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.custom__preguntas{
+    font-size: 0.4em;
+    font-weight: bold;
+    background-color: #40906017;
+}
+.custom__respuestas{
+    font-size: 0.8em;
+    text-align: initial;
+}
+
+.subtitulo__preguntas{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container{
+    margin-bottom: 2em;
+}
+/*-----Media Queries para tablet----*/
+@media screen and (min-width:480px) and (max-width: 768px){
+    /*MQ tablet seccion Inicio*/
+    .container-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar__responsive{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .nav-bar a{
+        font-size: 0.9em;
+    }
+    .container__titulo{
+        margin-top: 5em;
+    }
+    .titulo{
+        font-size: 1.3em;
+    }
+    .container-bienvenida{
+        height: 20em;
+    }
+    .subtitulo-bienvenida{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0;
+    }
+    .bienvenida{
+        width: 80%;
+        margin: auto;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    section .container-image{
+        height: 20em;
+    }
+
+    .image-producto{
+        height: 18em;
+    }
+    .container__subtitulo--promociones{
+        width: 100%;
+        height: 20em;
+        margin: auto;
+    }
+    .container__subtitulo--imagen{
+        display: none;
+    }
+
+    .container-opinion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*MQ tablet seccion Footer*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .icon__footer{
+        text-align: center;
+        font-size: 0.8em;
+    }
+/*MQ tablet seccion productos*/
+.container__grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.container-filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info__categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-productos{
+    margin: 0;
+}
+.custom__card{
+    margin: 20px;
+}
+.container-descuentos{
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+/* MQ tablet Seccion Contacto*/
+.texto__contacto{
+    width: 100%;
+}
+.container__info{
+    width: 100%;
+    height: 21em;
+}
+.card__info{
+    width: 80%;
+}
+.form{
+    width: 80%;
+}
+}
+/*-----------MQ para MOBILE----------*/
+@media screen and (max-width:479px){
+    /*MQ mobile seccion inicio*/
+    .nav-bar{
+        display: none;
+    }
+    .navbar__responsive{
+        display: flex;
+    }
+    .custom__navbar{
+        padding: 0.5px;
+    }
+    .container-bienvenida{
+        height: 20em;
+    }
+    .subtitulo-bienvenida{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .bienvenida{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    section .container-image, .image-item{
+        display: none;
+    }
+    .custom__carousel{
+        height: 25em;
+    }
+    .container__subtitulo--imagen{
+        display: none;
+    }
+    .container__subtitulo--promociones{
+        width: 100%;
+        height: 20em;
+    }
+    .container-opinion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card-opinion{
+        width: 8em;
+        height: 10em;
+    }
+    .image-opinion{
+        display: none;
+    }
+    .opinion{
+        display: flex;
+        margin: auto;
+        font-size: 0.5em;
+    }
+    /*MQ mobile footer*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+    }
+    .icon__footer{
+        font-size: 0.8em;
+        margin: 0;
+    }
+    footer .flecha__arriba img{
+        width: 2em;
+        height: 2em;
+    }
+    .ir-arriba{
+        font-size: 1em;
+    }
+    /*MQ Mobile seccion Productos*/
+    .container__grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-descuentos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*MQ Mobile seccion Contacto*/
+    .texto__contacto{
+        width: 100%;
+    }
+    .container__contacto .texto__contacto p{
+        width: 100%;
+        height: 22em;
+    }
+    .container__info{
+        width: 100%;
+        height: 18em;
+    }
+    .card__info{
+        width: 80%;
+    }
+    .mapa{
+        width: 20em;
+        margin-bottom: 40px;
+    }
+    .subtitulo__sugerencias p{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .form{
+        width: 90%;
+    }
+    .custom__form{
+        font-size: 0.8em;
+    }
+    .custom__preguntas{
+        font-size: 0.5em;
+
+    }
+}
+
