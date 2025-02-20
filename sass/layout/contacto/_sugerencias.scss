@@ -1,0 +1,20 @@
+.container__sugerencias{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+        .subtitulo__sugerencias{
+            font-size: 0.8em;
+                h2{
+                    margin: 40px;
+                    font-size: 2em;                
+                }
+                p{
+                    width: 70%;
+                    margin: 30px auto;                
+                }
+        }
+}

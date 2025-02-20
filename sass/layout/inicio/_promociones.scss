@@ -1,0 +1,100 @@
+//variables - paleta
+$verde: #409060;
+$negro: #000;
+$blanco: #fff;
+$gris: #ccc;
+
+.promociones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+        .container__subtitulo--promociones{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50%;
+            height: 30em;
+            background-image: url(../assets/fondo-pared.jpg);
+            background-size: cover;
+            color: $blanco;
+        }
+        .btn__descuentos{
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: 1em;
+            color: #409060;
+            background-color: #4090604d;
+            border-radius: 45px;
+            margin: 10px;
+            padding: 10px 40px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+                &:hover{
+                    color: #162f20e4;
+                    background-color: #5fcc8bd3;
+                }
+        }
+        .container__subtitulo--imagen{
+            width: 20em;
+            height: 30em;
+            object-fit: contain;
+            background-image: url(../assets/imagen-promociones.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+}
+h3{
+    text-align: center;
+    margin: 2em;
+}
+.promos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    border: 2px solid $gris;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+        .image-promo{
+            width: 10em;
+            height: 10em;
+        }
+        .container-descripcion{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: center;
+                .descripcion-p{
+                    font-size: 0.8em;
+                    font-weight: 700;
+                    margin: 20px;
+                }
+                .price{
+                    color: $verde;
+                    font-size: 0.7em;
+                    margin: 23px;
+                }
+                .button__promo{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    width: 50%;
+                    margin-top: 40px;
+                    font-size: 0.7em;
+                    padding: 0.5em 1em;
+                    border: 2px solid $verde;
+                    border-radius: 50px;
+                    color: $verde;
+                    font-weight: bold;
+                        &:hover{
+                            transform: scale(1.2);
+                            color: $blanco;
+                        }
+                }
+        }
+}

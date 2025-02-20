@@ -1,0 +1,12 @@
+.descuentos{
+    h2{
+        display: flex;
+        align-items: center;
+    }
+    .container-descuentos{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(245, 245, 220, 0.403);
+        padding: 40px 0;
+    }
+}

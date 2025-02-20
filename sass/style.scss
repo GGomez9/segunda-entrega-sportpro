@@ -1,0 +1,26 @@
+// reset
+@use './config/tipo';
+@use './config/reset';
+
+//Seccion inicio
+@use './layout/inicio/navbar';
+@use './layout/inicio/titulo';
+@use './layout/inicio/productos-top';
+@use './layout/inicio/promociones';
+@use './layout/inicio/opiniones';
+@use './layout/inicio/footer';
+
+//seccion productos
+@use './layout/productos/buscar';
+@use './layout/productos/galeria';
+@use './layout/productos/descuentos';
+
+/*seccion contacto*/
+@use './layout/contacto/head';
+@use './layout/contacto/info';
+@use './layout/contacto/sugerencias';
+@use './layout/contacto/form';
+@use './layout/contacto/preg-frec';
+
+/*responsive*/
+@use './layout/responsive'

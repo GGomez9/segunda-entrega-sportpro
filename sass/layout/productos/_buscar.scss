@@ -1,0 +1,54 @@
+//variables - paleta
+$verde: #409060;
+$negro: #000;
+$blanco: #fff;
+
+html{
+    scroll-behavior: smooth;
+}
+h3[id]{
+    scroll-margin-top: 2.5em;
+}
+
+.container__grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "busqueda galeria galeria galeria";
+        .container-filtro{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 0.5em 1em;
+            grid-area: "busqueda";
+                .info__categorias{
+                    display: flex;
+                    width: 100%;
+                    font-size: 1em;
+                    flex-direction: column;
+                    text-align: initial;
+                    }
+                    label{
+                        font-size: 1em;
+                        font-weight: bold;
+                        margin: 10px;
+                        padding: 10px;
+                    }
+                    select{
+                        font-size: 0.7em;
+                        padding: 0.75em;
+                        border-radius: 75px;
+                        width: 70%;
+                        &:hover{
+                            box-shadow:0 0 8px $verde;
+                        }
+                        &:focus{
+                            border: 3px solid $verde;
+                        }
+                    }
+            }
+    
+}

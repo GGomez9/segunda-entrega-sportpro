@@ -1,0 +1,37 @@
+//variables - paleta
+$verde: #409060;
+$negro: #000;
+$blanco: #fff;
+
+footer{
+    display: flex;
+    flex: wrap;
+    height: 11em;
+    justify-content: center;
+    align-items:center;
+    background-color: #4a4e4a;
+    color: $blanco;
+        .icon__footer{
+            margin: 1em;
+            padding: 0.5em;
+        }
+}
+.flecha__arriba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+        .ir-arriba{
+            font-size: 1em;
+            color: $blanco;
+            border-radius: 15px;
+            font-weight: bold;
+            text-align: right;
+            text-decoration: none;
+            img{
+                width: 3em;
+                height: 3em;
+            }
+        }
+}

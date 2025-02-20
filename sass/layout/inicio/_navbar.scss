@@ -1,0 +1,59 @@
+@mixin wh ($valor1, $valor2){
+    width: $valor1;
+    height: $valor2;
+}
+//variables
+$verde: #409060;
+$negro: #000;
+$blanco: #fff;
+
+header{
+    display: flex;
+        .container-logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            @include wh(100%, 2.5em);
+            height: 2.5em;
+            width: 100%;
+            background-color: $verde;
+            position: fixed;
+            z-index: 10;
+            box-shadow: 10px 0 40px #000;
+        }
+        .navbar__responsive{
+            display: none;
+        }
+        .nav-bar{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background-color: $verde;
+                a{
+                    font-size: 1em;
+                    font-weight: 600;
+                    color:$negro;
+                    text-decoration: none;
+                    margin: 1em;
+                    padding: 1px 1em;
+                    &:hover{
+                        color: $blanco;
+                    }
+                }
+                ul{
+                    margin-bottom: 0;
+
+                }
+                .logo__empresa{
+                    font-size: 1.5em;
+                    color: $blanco;
+                    font-weight: bold;
+                    align-items: center;
+                    margin: 0 0.5em;
+                }
+        }
+
+}

@@ -1,0 +1,36 @@
+.container__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    height: 21em;
+        .card__info{
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            border-radius: 200px;
+            background-color: #eeea;
+            box-shadow: 2px 2px 10px;
+                img{
+                    width: 1.5em;
+                    height: 1.5em;
+                }
+                p{
+                    font-size: 0.8em;
+                    margin: 15px;
+                }
+        }
+        .mapa{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px;
+        }
+}

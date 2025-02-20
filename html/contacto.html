@@ -11,8 +11,10 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <!--Link de los iconos de Booststrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--aos-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--CSS-->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -36,7 +38,7 @@
         <div class="navbar__responsive">
             <nav class="navbar bg-body-success fixed-top custom__navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand fw-bold text-white" href="#inicio">Sportpro</a>
+                    <a class="navbar-brand fw-bold text-white" href="../index.html">Sportpro</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
@@ -76,7 +78,7 @@
 
         </div>
     </header>
-    <main>
+    <main>0
         <!--seccion Contacto-->
         <div class="container__contacto">
             <div class="subtitulo__contacto">
@@ -93,19 +95,19 @@
             </div>
         </div>
             <article class="container__info container">
-                <div class="card__info">
+                <div class="card__info" data-aos="zoom-out">
                     <img src="../assets/icono-whatsapp.png" alt="logo de whatsapp">
                     <p>+549 11 2222 3333</p>
                 </div>
-                <div class="card__info">
+                <div class="card__info" data-aos="zoom-out">
                 <img src="../assets/icono-insta.png" alt="logo de instagram">
                 <p>@sportprodeportes</p>
             </div>
-            <div class="card__info">
+            <div class="card__info" data-aos="zoom-out">
                 <img src="../assets/pin.png" alt="icono de ubicacion">
                 <p>Calle 9 de Julio y Av. San Martin, Bernal</p>
             </div>
-            <div class="mapa container-fluid">
+            <div class="mapa" data-aos="zoom-out-up">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.145688299933!2d-58.28207005457947!3d-34.71025765200096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32fe0ab88f359%3A0x305269b096d79ca!2sBurger%20King!5e0!3m2!1ses-419!2sar!4v1738204502305!5m2!1ses-419!2sar" width="450" height="200" style="border:1px solid #000;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </article>
@@ -118,7 +120,7 @@
                     cuéntanos qué te ha parecido a nuestra página, tu compra o el trato recibido. ¡Tu feedback es
                     fundamental para nosotros!</p>
             </div>
-            <div class="container form">
+            <article class="container form" data-aos="zoom-out-up">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label fw-bold custom__form">Nombre y Apellido</label>
                     <input type="text" class="form-control custom__form" id="exampleFormControlInput1" placeholder="Escribi tu nombre">
@@ -133,7 +135,7 @@
                     <textarea class="form-control m-0 custom__form" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <button type="button" class="btn btn-primary m-3">Enviar</button>
                 </div>
-            </div>
+            </article>
             </section>
             <!--seccion de preguntas frecuentes-->
         <section>
@@ -141,7 +143,7 @@
                 <div class="subtitulo__preguntas container-fluid">
                     <h2>PREGUNTAS FRECUENTES</h2>
                 </div>
-                <div class="container-fluid">
+                <div class="container-fluid" data-aos="zoom-out-up">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -235,9 +237,9 @@
     </main>
     <footer>
         <div class="icon__container">
-            <i class="bi bi-instagram icon__footer"> @sportprodeportes</i>
-            <i class="bi bi-whatsapp icon__footer">  11 2222 3333</i>
-            <i class="bi bi-geo-alt-fill icon__footer"> Calle 9 de Julio y Av. San Martin, Bernal</i>
+            <i class="bi bi-instagram icon__footer" data-aos="zoom-out"> @sportprodeportes</i>
+            <i class="bi bi-whatsapp icon__footer" data-aos="zoom-out">  11 2222 3333</i>
+            <i class="bi bi-geo-alt-fill icon__footer" data-aos="zoom-out"> Calle 9 de Julio y Av. San Martin, Bernal</i>
         </div>
         <div class="flecha__arriba">
             <a class="ir-arriba" href="#contacto"><img src="../assets/flecha-arriba.png" alt="flecha arriba"><br>Ir Arriba</a>
@@ -245,7 +247,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

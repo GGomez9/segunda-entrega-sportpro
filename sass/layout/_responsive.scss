@@ -1,0 +1,264 @@
+/*version tablet*/
+@media screen and (min-width:576px) and (max-width: 768px){
+    .container-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            .nav-bar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                    a{
+                        font-size: 0.9em;
+                    }
+            }
+    }
+    .nav-bar__responsive{
+        display: none;
+    }
+    .container__titulo{
+        margin-top: 5em;
+            .titulo{
+                font-size: 1.3em;
+            }
+    }
+    .container-bienvenida{
+        height: 20em;
+            .subtitulo-bienvenida{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 0;        
+            }
+            .bienvenida{
+                width: 80%;
+                margin: auto;
+                font-size: 0.8em;
+                text-align: center;        
+            }
+    }
+    section{
+        .container-image{
+            height: 20em;
+            display: none;
+                .image-producto{
+                    height: 18em;
+                }
+        }
+        .carousel{
+            display: block;
+        }
+        .container__subtitulo--promociones{
+            width: 100%;
+            height: 20em;
+            margin: auto;    
+        }
+        .container__subtitulo--imagen{
+            display: none;
+        }
+    }
+    .container-opinion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            .icon__footer{ 
+                text-align: center;
+                font-size: 0.8em;
+            }
+    }
+    .container__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+            .container-filtro{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    .info__categorias{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
+            }
+            .galeria{
+                .container-productos{
+                    margin: 0;
+                        .custom__card{
+                            margin: 20px;
+                        }
+                }
+            }
+    }
+    .descuentos{
+        .container-descuentos{
+            flex-wrap: wrap;
+            object-fit: cover;
+        }
+    }
+    .container__contacto{
+        .texto__contacto{
+            width: 100%;
+        }
+        .container__info{
+            width: 100%;
+            height: 21em;
+                .card__info{
+                    width: 80%;
+
+                }
+        }
+    }
+    .container__sugerencias{
+        .form{
+            width: 80%;
+        }
+    }
+}
+/*version mobile*/
+@media screen and (max-width:575px){
+    header{
+        .nav-bar{
+            display: none;
+        }
+        .navbar__responsive{
+            display: flex;
+            z-index: 20;
+                .custom__navbar{
+                padding: 0.5px;
+            }
+        }
+    }
+    .container-bienvenida{
+        height: 20em;
+        .subtitulo-bienvenida{
+            text-align: center;
+            font-size: 0.8em;    
+        }
+        .bienvenida{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
+            font-size: 0.8em;    
+        }
+    }.container-image{
+        .image-item{
+            display: none;
+        }
+    }
+    .carousel{
+        display: block;
+            .custom__carousel{
+                height: 25em;
+            }
+    }
+    .promociones{
+        .container__subtitulo--promociones{
+            width: 100%;
+            height: 20em;    
+        }
+        .container__subtitulo--imagen{
+            display: none;
+        }
+    }
+    .container__opinion{
+        display: flex;
+        flex-wrap: wrap;
+            .card__opinion{
+                width: 8em;
+                height: 10em;
+                    .image-opinion{
+                        display: none;
+                    }
+                    .opinion{
+                        display: flex;
+                        margin: auto;
+                        font-size: 0.5em;                
+                    }        
+            }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+            .icon__container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin: 10px;
+                    .icon__footer{
+                        font-size: 0.8em;
+                        margin: 0;                
+                    }        
+            }
+            .flecha__arriba{
+                img{
+                    width: 2em;
+                    height: 2em;
+                        .ir-arriba{
+                            font-size: 1em;
+                        }
+                };
+            }
+    }
+    /*productos*/
+    .container__grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .descuentos{
+        .container-descuentos{
+            display: flex;
+            flex-wrap: wrap;    
+        }
+    }
+    /*contacto*/
+    .container__contacto{
+        .texto__contacto{
+            width: 100%;
+                p{
+                    width: 100%;
+                    height: 17em;            
+                }
+        }
+    }
+    .container__info{
+        width: 100%;
+        height: 18em;
+        .card__info{
+            width: 80%;
+        }
+        .mapa{
+            width: 20em;
+            margin-bottom: 40px;    
+        }
+    }
+    .container__sugerencias{
+        .subtitulo__sugerencias{
+            p{
+                width: 90%;
+                margin: 10px auto;        
+            }
+        }
+        .form{
+            width: 90%;
+                custom__form{
+                    font-size: 0.8em;
+                }
+        }
+    }
+    .container__preguntas{
+        font-size: 0.7em;
+    }
+}
