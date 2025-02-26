@@ -5,15 +5,26 @@ $blanco: #fff;
 
 footer{
     display: flex;
-    flex: wrap;
+    flex-direction: row;
     height: 11em;
     justify-content: center;
     align-items:center;
-    background-color: #4a4e4a;
-    color: $blanco;
-        .icon__footer{
-            margin: 1em;
-            padding: 0.5em;
+    background-color: $negro;
+    color: $verde;
+        .icon__container{
+            display: flex;
+                .icon__footer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 25%;
+                    padding: 0.5em;
+                    font-size: 2em;
+                        &:hover{
+                            transform: scale(1.2);
+                            color: $blanco;
+                        }
+                }
         }
 }
 .flecha__arriba{
@@ -24,14 +35,23 @@ footer{
     width: 20%;
         .ir-arriba{
             font-size: 1em;
-            color: $blanco;
+            color: $verde;
             border-radius: 15px;
             font-weight: bold;
-            text-align: right;
+            text-align: center;
             text-decoration: none;
-            img{
-                width: 3em;
-                height: 3em;
-            }
+                .custom__flecha{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $verde;
+                    font-size: 1.5em;
+                    margin: auto;
+                        &:hover{
+                            transform: scale(1.3);
+                            color: $blanco;
+                        }
+                }
         }
 }

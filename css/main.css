@@ -299,16 +299,27 @@ h3 {
 
 footer {
   display: flex;
-  flex: wrap;
+  flex-direction: row;
   height: 11em;
   justify-content: center;
   align-items: center;
-  background-color: #4a4e4a;
-  color: #fff;
+  background-color: #000;
+  color: #409060;
 }
-footer .icon__footer {
-  margin: 1em;
+footer .icon__container {
+  display: flex;
+}
+footer .icon__container .icon__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 25%;
   padding: 0.5em;
+  font-size: 2em;
+}
+footer .icon__container .icon__footer:hover {
+  transform: scale(1.2);
+  color: #fff;
 }
 
 .flecha__arriba {
@@ -320,15 +331,24 @@ footer .icon__footer {
 }
 .flecha__arriba .ir-arriba {
   font-size: 1em;
-  color: #fff;
+  color: #409060;
   border-radius: 15px;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
 }
-.flecha__arriba .ir-arriba img {
-  width: 3em;
-  height: 3em;
+.flecha__arriba .ir-arriba .custom__flecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #409060;
+  font-size: 1.5em;
+  margin: auto;
+}
+.flecha__arriba .ir-arriba .custom__flecha:hover {
+  transform: scale(1.3);
+  color: #fff;
 }
 
 html {
@@ -383,6 +403,9 @@ h3[id] {
 .galeria {
   grid-area: "galeria";
 }
+.galeria h3 {
+  border-bottom: 4px solid #409060;
+}
 .galeria .container-productos {
   display: flex;
   flex-wrap: wrap;
@@ -433,6 +456,7 @@ h3[id] {
 .descuentos h2 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .descuentos .container-descuentos {
   display: flex;
@@ -717,6 +741,9 @@ h3[id] {
     text-align: center;
     font-size: 0.8em;
   }
+  .container-image {
+    display: none;
+  }
   .container-image .image-item {
     display: none;
   }
@@ -733,43 +760,50 @@ h3[id] {
   .promociones .container__subtitulo--imagen {
     display: none;
   }
-  .container__opinion {
+  .container-opinion {
     display: flex;
     flex-wrap: wrap;
   }
-  .container__opinion .card__opinion {
+  .container-opinion .card-opinion {
     width: 8em;
     height: 10em;
   }
-  .container__opinion .card__opinion .image-opinion {
+  .container-opinion .card-opinion .image-opinion {
     display: none;
   }
-  .container__opinion .card__opinion .opinion {
+  .container-opinion .card-opinion .opinion {
     display: flex;
     margin: auto;
     font-size: 0.5em;
   }
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   footer .icon__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
     margin: 10px;
   }
   footer .icon__container .icon__footer {
-    font-size: 0.8em;
+    font-size: 2em;
     margin: 0;
   }
-  footer .flecha__arriba img {
-    width: 2em;
-    height: 2em;
+  footer .flecha__arriba {
+    width: 50%;
+    height: 50%;
   }
-  footer .flecha__arriba img .ir-arriba {
+  footer .flecha__arriba .ir-arriba {
     font-size: 1em;
+    width: 50%;
+  }
+  footer .flecha__arriba .ir-arriba .custom__flecha {
+    display: flex;
+    font-size: 1.5em;
+    color: #fff;
   }
   /*productos*/
   .container__grid {

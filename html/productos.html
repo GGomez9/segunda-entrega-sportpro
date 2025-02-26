@@ -57,19 +57,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="./productos.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Productos
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./productos.html">Hombres</a></li>
-                                        <li><a class="dropdown-item" href="./productos.html">Mujeres</a></li>
+                                        <li><a class="dropdown-item" href="#hombres">Hombres</a></li>
+                                        <li><a class="dropdown-item" href="#dama">Mujeres</a></li>
                                         <li><a class="dropdown-item" href="#calzado">Calzado</a></li>
                                     </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -229,9 +229,8 @@
                     </div>
                 </article>
             </div>
-        </section>
         <!--Seccion de promociones y descuentos-->
-        <div class="descuentos">
+        <article class="descuentos">
             <h2 class="subtitulo m-2" id="descuentos">DESCUENTOS</h2>
             <div class="container-descuentos container">
                 <div class="card custom__card" style="width: 10em">
@@ -265,18 +264,18 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
     </main>
     <!--Pie de Pagina-->
     <footer class="footer">
-        <div class="icon__container">
-            <i class="bi bi-instagram icon__footer"> @sportprodeportes</i>
-            <i class="bi bi-whatsapp icon__footer">11 2222 3333</i>
-            <i class="bi bi-geo-alt-fill icon__footer">Calle 9 de Julio y Av. San Martin, Bernal</i>
+        <div class="icon__container container">
+            <i class="bi bi-instagram icon__footer" data-aos="flip-up"></i>
+            <i class="bi bi-whatsapp icon__footer" data-aos="flip-up"></i>
+            <i class="bi bi-geo-alt-fill icon__footer" data-aos="flip-up"></i>
         </div>
         <div class="flecha__arriba">
-            <a class="ir-arriba" href="#productos"><img src="../assets/flecha-arriba.png" alt="flecha arriba"><br>Ir
-                Arriba</a>
+            <a class="ir-arriba" href="#productos">
+                <i class="bi bi-arrow-up-circle-fill custom__flecha" data-aos="flip-up">Ir arriba</i>
         </div>
     </footer>
 

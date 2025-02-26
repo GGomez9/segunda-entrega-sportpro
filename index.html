@@ -57,19 +57,21 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
-                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="./html/productos.html" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Productos
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="./html/productos.html">Hombres</a></li>
-                                        <li><a class="dropdown-item" href="./html/productos.html">Mujeres</a></li>
-                                        <li><a class="dropdown-item" href="./html/productos.html">Calzado</a></li>
+                                        <li><a class="dropdown-item" href="./html/productos.html#hombres">Hombres</a></li>
+                                        <li><a class="dropdown-item" href="./html/productos.html#dama">
+                                            Damas
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="./html/productos.html#calzado">Calzado</a></li>
                                     </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -211,14 +213,14 @@
     </main>
     <!--------------------Pie de pagina--------------------->
     <footer>
-        <div class="icon__container container-fluid">
-            <i class="bi bi-instagram icon__footer"> @sportprodeportes</i>
-            <i class="bi bi-whatsapp icon__footer"> 11 2222 3333</i>
-            <i class="bi bi-geo-alt-fill icon__footer"> Calle 9 de Julio y Av. San Martin, Bernal</i>
+        <div class="icon__container container">
+            <i class="bi bi-instagram icon__footer" data-aos="flip-up"></i>
+            <i class="bi bi-whatsapp icon__footer" data-aos="flip-up"></i>
+            <i class="bi bi-geo-alt-fill icon__footer" data-aos="flip-up"></i>
         </div>
         <div class="flecha__arriba">
             <a class="ir-arriba" href="#inicio">
-                <img src="./assets/flecha-arriba.png" alt="flecha arriba"><br>Ir Arriba
+                <i class="bi bi-arrow-up-circle-fill custom__flecha" data-aos="flip-up">Ir arriba</i>
             </a>
         </div>
     </footer>

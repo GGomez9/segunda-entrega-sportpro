@@ -1,4 +1,8 @@
 /*version tablet*/
+$verde: #409060;
+$negro: #000;
+$blanco: #fff;
+
 @media screen and (min-width:576px) and (max-width: 768px){
     .container-logo{
         display: flex;
@@ -151,6 +155,7 @@
             font-size: 0.8em;    
         }
     }.container-image{
+        display: none;
         .image-item{
             display: none;
         }
@@ -170,10 +175,10 @@
             display: none;
         }
     }
-    .container__opinion{
+    .container-opinion{
         display: flex;
         flex-wrap: wrap;
-            .card__opinion{
+            .card-opinion{
                 width: 8em;
                 height: 10em;
                     .image-opinion{
@@ -188,26 +193,31 @@
     }
     footer{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
             .icon__container{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 align-content: center;
                 margin: 10px;
                     .icon__footer{
-                        font-size: 0.8em;
-                        margin: 0;                
+                        font-size: 2em;
+                        margin: 0;
                     }        
             }
             .flecha__arriba{
-                img{
-                    width: 2em;
-                    height: 2em;
+                width: 50%;
+                height: 50%;
                         .ir-arriba{
                             font-size: 1em;
+                            width: 50%;
+                                .custom__flecha{
+                                    display: flex;
+                                    font-size: 1.5em;
+                                    color: $blanco;
+                                }
                         }
-                };
             }
     }
     /*productos*/

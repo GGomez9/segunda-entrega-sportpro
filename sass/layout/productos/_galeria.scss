@@ -1,5 +1,13 @@
+$verde: #409060;
+$negro: #000;
+$blanco: #fff;
+
 .galeria{
     grid-area: "galeria";
+    h3{
+        border-bottom: 4px solid $verde;
+        
+    }
         .container-productos{
             display: flex;
             flex-wrap: wrap;
