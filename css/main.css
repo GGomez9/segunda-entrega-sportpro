@@ -131,6 +131,9 @@ header .nav-bar .logo__empresa {
   height: 22em;
   border-radius: 10px;
 }
+.container-image .image-item .image-producto:hover {
+  background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/conjunto-adidas.jpg);
+}
 
 .container-button-ver {
   width: 100%;
